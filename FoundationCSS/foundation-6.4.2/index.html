@@ -1,0 +1,171 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoundationCss Cheatsheet</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
+  <style>
+    .spacer {
+      height: 500px;
+    }
+  </style>
+</head>
+
+<body>
+  <!--Typography-->
+  <div class="row">
+
+    <!--Headings-->
+    <h1>Heading 1 <small>Secondary Text</small></h1>
+    <h2>Heading 2 <small>Secondary Text</small></h2>
+    <h3 class="subheader">Heading 3 <small>Secondary Text</small></h3>
+
+    <!--Paragraphs-->
+    <p class="lead"><strong>Lorem</strong> ipsum dolor sit amet, <em>consectetur</em> adipisicing elit. Eligendi ea quia laborum impedit tenetur obcaecati id quibusdam ipsa perferendis consequuntur quo, repellendus tempora a inventore. <a href="#" title="">Necessitatibus</a> totam labore cupiditate provident.</p>
+    <p><strong>Lorem</strong> ipsum dolor sit amet, <em>consectetur</em> adipisicing elit. Eligendi ea quia laborum impedit tenetur obcaecati id quibusdam ipsa perferendis consequuntur quo, repellendus tempora a inventore. <a href="#" title="">Necessitatibus</a> totam labore cupiditate provident.</p>
+    <p>Server up-time</p>
+    <div class="stat">230</div>
+    <hr>
+
+    <!--Alignment Classes-->
+    <p class="text-left">Left Aligned Text</p>
+    <p class="text-center">center Aligned Text</p>
+    <p class="text-right">right Aligned Text</p>
+    <p class="text-justify">justify Aligned Text</p>
+
+    <!--Float Classes-->
+    <div class="callout clearfix">
+      <a class="button float-left">Left</a>
+      <a class="button float-right">Right</a>
+    </div>
+
+    <hr>
+
+    <!--Code Tags-->
+    <code>&lt;div class="&gt;Hello World&lt;/div"</code>
+    <p>Press <kbd>Cmd+r</kbd></p>
+    <hr>
+    <blockquote>
+      <p>This is a blockquote from Foundation</p>
+      <cite>Aldo Velasquez</cite>
+    </blockquote>
+    <br>
+
+    <!--Lists-->
+    <ul class="no-bullet">
+      <li>Item One</li>
+      <li>Item Two</li>
+      <li>Item Three</li>
+      <ul>
+        <li>Nested Item</li>
+        <li>Nested Item</li>
+        <li>Nested Item</li>
+      </ul>
+      <li>Item Four</li>
+    </ul>
+
+    <ol>
+      <li>Item One</li>
+      <li>Item Two</li>
+      <li>Item Three</li>
+      <ul>
+        <li>Nested Item</li>
+        <li>Nested Item</li>
+        <li>Nested Item</li>
+      </ul>
+      <li>Item Four</li>
+    </ol>
+
+    <!--Visibility-->
+    <p class="hide">Hidden</p>
+    <p class="invisible">Invisible</p>
+    <p>You are on a small screen or larger.</p>
+    <p class="show-for-medium">You are on a medium screen or larger.</p>
+    <p class="show-for-large">You are on a large screen or larger.</p>
+    <p class="hide-for-small-only">You are not on a small screen.</p>
+    <p class="hide-for-medium-only">You are not on a medium screen.</p>
+    <p class="show-for-large-only">You are not on a large screen.</p>
+    <p class="show-for-landscape">You are on a landscape</p>
+    <p class="show-for-portrait">You are on a portrait</p>
+  </div>
+  <hr>
+  <div class="row">
+
+    <!--Buttons-->
+    <button class="button">Button</button>
+    <a href="#" class="button">Link</a>
+    <input type="button" value="input" class="button">
+    <br>
+
+    <!--Colored Button Classes-->
+    <button class="success button">Button</button>
+    <button class="alert button">Button</button>
+    <button class="warning button">Button</button>
+    <button class="secondary button">Button</button>
+    <button class="button disabled">Button</button>
+    <br>
+
+    <!--Button Size Classes-->
+    <button class="button tiny">Button</button>
+    <button class="button small">Button</button>
+    <button class="button">Button</button>
+    <button class="button large">Button</button>
+    <button class="button expanded">Button</button>
+    <button class="button expanded large">Button</button>
+    <br>
+
+    <!--Hallow Buttons-->
+    <button class="success button hollow">Button</button>
+    <button class="alert button hollow">Button</button>
+    <button class="warning button hollow">Button</button>
+    <button class="secondary button hollow">Button</button>
+    <button class="button disabled hollow">Button</button>
+  </div>
+  <hr>
+
+
+  <div class="row">
+
+    <!--Forms-->
+    <form action="">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Name">
+      </div>
+      <div>
+        <label for="name">Email</label>
+        <input type="email" name="email" placeholder="Email">
+      </div>
+      <div>
+        <label for="name">Age</label>
+        <input type="number" name="age" placeholder="Age">
+      </div>
+      <div>
+        <label for="name">Message</label>
+        <textarea name="message"></textarea>
+      </div>
+      <div>
+        <label for="name">Gender</label>
+        <select name="gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+      </select>
+      </div>
+    </form>
+  </div>
+  <div class="spacer"></div>
+
+
+
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
