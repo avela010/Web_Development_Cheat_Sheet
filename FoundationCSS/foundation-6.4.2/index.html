@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FoundationCss Cheatsheet</title>
   <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="icons/foundation-icons/foundation-icons.css">
   <link rel="stylesheet" href="css/app.css">
   <style>
     .spacer {
@@ -16,6 +17,30 @@
 </head>
 
 <body>
+  <!--Top Bar-->
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li class="menu-text">Site Title</li>
+        <li>
+          <a href="#">One</a>
+          <ul class="menu verticle">
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Two</a></li>
+        <li><a href="#">Three</a></li>
+      </ul>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu">
+        <li><input type="search" placeholder="search"></li>
+        <li><button type="button" class="button">Search</button></li>
+      </ul>
+    </div>
+  </div>
   <!--Typography-->
   <div class="row">
 
@@ -55,7 +80,7 @@
     </blockquote>
     <br>
 
-    <!--Lists-->
+    <!--List Tags-->
     <ul class="no-bullet">
       <li>Item One</li>
       <li>Item Two</li>
@@ -155,12 +180,230 @@
           <option value="Female">Female</option>
       </select>
       </div>
+
+
+      <fieldset class="fieldset">
+        <legend>A fieldset</legend>
+        <input type="checkbox"><label>checkbox</label>
+        <input type="checkbox"><label>checkbox</label>
+        <input type="checkbox"><label>checkbox</label>
+      </fieldset>
+
+      <label for="fileUpload" class="button">Upload File</label>
+      <input type="file" name="fileUpload">
+      <label for="password">Password</label>
+      <input type="password" name="password" value="">
+
+      <!--Text Helper-->
+      <p class="help-text">Your password must be 8 charactars or more.</p>
+
+      <div class="input-group">
+        <span class="input-group-label">@</span>
+        <input type="email" class="input-group-field">
+        <div class="input-group-button">
+          <input type="submit" class="button" value="submit">
+        </div>
+      </div>
+
+      <!--Switch Tag-->
+      <div class="switch">
+        <input class="switch-input" id="mySwitch" type="checkbox">
+        <label class="switch-paddle" for="mySwitch">
+        <span class="show-for-sr">Enabled</span>
+      </label>
+      </div>
+
+      <div class="slider" data-slider data-initial-start="0" data-end="20">
+        <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+        <span class="slider-fill" data-slider-fill></span>
+        <input type="hidden">
+      </div>
     </form>
   </div>
+
+  <div class="row">
+
+    <!--Tables-->
+    <table class="striped hover stack">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>34</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Dot</td>
+        <td>12</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="row">
+    <!--Menu-->
+    <ul class="menu">
+      <li class="menu-text">Site Title</li>
+      <li><a href="#">Link 1</a></li>
+      <li class="active"><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+    </ul>
+
+    <!--Simple Menu-->
+    <ul class="menu simple">
+      <li class="menu-text">Site Title</li>
+      <li><a href="#">Link 1</a></li>
+      <li class="active"><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+    </ul>
+
+    <ul class="menu icon-top">
+      <li class="menu-text">Site Title</li>
+      <li><a href="#"><i class="fi-list"></i>One</a></li>
+      <li class="active"><a href="#"><i class="fi-list">Two</i></a></li>
+      <li><a href="#"><i class="fi-list"></i>Three</a></li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <!--Callouts-->
+    <div class="callout">
+      <p>This is an example of a callout</p>
+    </div>
+    <div class="callout secondary">
+      <p>This is an example of a callout</p>
+    </div>
+    <div class="callout success">
+      <p>This is an example of a callout</p>
+    </div>
+    <div class="callout warning">
+      <p>This is an example of a callout</p>
+    </div>
+    <div class="callout alert">
+      <p>This is an example of a callout</p>
+    </div>
+    <hr>
+    <!-- Progress Bar -->
+    <div class="success progress" role="progressBar">
+      <div class="progress-meter" style="width:20%">
+        <p class="progress-meter-text">20%</p>
+      </div>
+    </div>
+
+    <div class="warning progress" role="progressBar">
+      <div class="progress-meter" style="width:90%">
+        <p class="progress-meter-text">90%</p>
+      </div>
+    </div>
+
+    <div class="alert progress" role="progressBar">
+      <div class="progress-meter" style="width:100%">
+        <p class="progress-meter-text">100%</p>
+      </div>
+    </div>
+
+    <!--Labels-->
+    <span class="secondar label">secondar label</span>
+    <span class="success label">success label</span>
+    <span class="alert label">alert label</span>
+    <span class="warning label">warning label</span>
+    <hr>
+
+    <!--Badges-->
+    <span class="secondar badge">4</span>
+    <span class="success badge">7</span>
+    <span class="alert badge">A</span>
+    <span class="warning badge">9</span>
+    <br>
+
+    <!-- Bread Crumbs -->
+    <nav role="navigation">
+      <ul class="breadcrumbs">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Posts</a></li>
+        <li>My Posts</li>
+      </ul>
+    </nav>
+    <hr>
+
+    <!-- Pagination -->
+    <ul class="pagination" role="navigation">
+      <li class="disabled">Prev</li>
+      <li class="current">1</li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li class="ellipsis"></li>
+      <li><a href="#">13</a></li>
+      <li><a href="#">14</a></li>
+      <li><a href="#">15</a></li>
+      <li><a href="#">Next</a></li>
+    </ul>
+  </div>
+
+
+  <!-- Grid System -->
+  <div class="grid-x">
+    <div class="columns large-8 small-8 medium-6">
+      <h3>Main Column</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt alias veritatis expedita eum corporis enim deleniti consequuntur molestiae praesentium veniam tempora cupiditate ipsum labore accusamus distinctio vel, esse dignissimos architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div class="columns large-4 small-4 medium-6">
+      <h3>Side Bar</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore temporibus, omnis enim magni incidunt animi iste vero asperiores nemo accusamus cum a eaque veritatis amet blanditiis, similique nam in voluptas.</p>
+    </div>
+  </div>
+
+  <div class="grid-x">
+    <div class="columns large-3 small-3 medium-3">
+      <h3>Main Column</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt alias veritatis expedita eum corporis enim deleniti consequuntur molestiae praesentium veniam tempora cupiditate ipsum labore accusamus distinctio vel, esse dignissimos architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+
+    <div class="columns large-3 small-3 medium-3">
+      <h3>Side Bar</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore temporibus, omnis enim magni incidunt animi iste vero asperiores nemo accusamus cum a eaque veritatis amet blanditiis, similique nam in voluptas.</p>
+    </div>
+
+    <div class="columns large-3 small-3 medium-3">
+      <h3>Side Bar</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore temporibus, omnis enim magni incidunt animi iste vero asperiores nemo accusamus cum a eaque veritatis amet blanditiis, similique nam in voluptas.</p>
+    </div>
+
+    <div class="columns large-3 small-3 medium-3">
+      <h3>Side Bar</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore temporibus, omnis enim magni incidunt animi iste vero asperiores nemo accusamus cum a eaque veritatis amet blanditiis, similique nam in voluptas.</p>
+    </div>
+  </div>
+
+  <div class="grid-x">
+    <div class="columns large-12 large-offset-6">
+      <h3>Box</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam minus voluptatem hic quo. Dicta neque sint maxime ut dignissimos illo veniam, voluptatem perspiciatis dolorum aspernatur saepe laborum, rerum quam recusandae.</p>
+    </div>
+  </div>
+
+  <div class="grid-x">
+    <div class="column large-4">
+      <!-- Cards -->
+      <div class="card">
+        <div class="card-divider">
+          This is a header
+        </div>
+        <img src="http://foundation.zurb.com/sites/docs/assets/img/generic/rectangle-1.jpg">
+        <div class="card-section">
+          <h4>This is a card.</h4>
+          <p>It has an easy to override visual style, and is appropriately subdued.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="spacer"></div>
-
-
-
 
   <script src="js/vendor/jquery.js"></script>
   <script src="js/vendor/what-input.js"></script>
